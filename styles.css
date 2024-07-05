@@ -72,7 +72,8 @@ main {
 
 .book {
     flex-basis: 48%;
-    text-align: center;
+    text-align: left;
+    justify-content: space-between;
 }
 
 .book img {
