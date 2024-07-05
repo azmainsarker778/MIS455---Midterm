@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookStore - Contact Us</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Your Name and ID -->
+    <!-- Claude - ID: AI_Assistant_2024 -->
     <header>
         <h1>BookStore</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -23,25 +23,26 @@
     <main class="contact-content">
         <h2>Contact Us</h2>
         <div class="contact-info">
-            <p>We'd love to hear from you! Get in touch with us using the information below:</p>
-            <ul>
-                <li>Email: info@bookstore.com</li>
-                <li>Phone: (123) 456-7890</li>
-                <li>Address: 123 Book Street, Reading City, RC 12345</li>
-            </ul>
+            <p>We'd love to hear from you! Whether you have a question about our books, need assistance with an order, or just want to share your thoughts, we're here to help.</p>
+            <p>You can reach us by phone, email, or by filling out the form below. Our customer service team is available Monday through Friday, 9am to 5pm EST.</p>
         </div>
-        <form class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-image">
+            <img src="bookstore.jpg" alt="Our Bookstore">
+        </div>
     </main>
 
     <footer>

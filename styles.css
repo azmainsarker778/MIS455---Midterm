@@ -1,98 +1,86 @@
-/* Global Styles */
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     color: #333;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Merriweather', serif;
+h1, h2, h3 {
+    font-family: 'Lora', serif;
 }
 
 /* Header Styles */
 header {
-    background-color: #f4f4f4;
+    background-color: #1a1a1a;
+    color: #fff;
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
-    color: #333;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
 }
 
 nav ul li {
-    margin-left: 1rem;
+    display: inline;
+    margin: 0 10px;
 }
 
 nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #ffd700;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+nav ul li a.active {
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Home Page Styles */
 .home-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.hero {
-    text-align: center;
-    margin-bottom: 2rem;
+.welcome, .featured {
+    flex-basis: 48%;
 }
 
 .featured-books {
-    width: 100%;
-}
-
-.book-list {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .book {
+    flex-basis: 48%;
     text-align: center;
-    margin: 1rem;
 }
 
 .book img {
-    max-width: 200px;
+    max-width: 100%;
     height: auto;
 }
 
 /* Products Page Styles */
-.products-content {
-    padding: 2rem;
-}
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -111,7 +99,7 @@ footer {
 }
 
 .product button {
-    background-color: #007bff;
+    background-color: #1a1a1a;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
@@ -120,47 +108,54 @@ footer {
 }
 
 .product button:hover {
-    background-color: #0056b3;
+    background-color: #333;
 }
 
 /* Contact Page Styles */
 .contact-content {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.contact-info ul {
-    list-style-type: none;
-    padding: 0;
+.contact-info, .contact-form, .contact-image {
+    flex-basis: 48%;
 }
 
-.contact-form {
+.contact-form form {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
 }
 
-.contact-form label {
-    margin-top: 1rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+.contact-form label, .contact-form input, .contact-form textarea {
+    margin-bottom: 1rem;
 }
 
 .contact-form button {
-    background-color: #007bff;
+    background-color: #1a1a1a;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    margin-top: 1rem;
     transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: #333;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
